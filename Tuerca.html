@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de MECATRÓNICA</title>
+    <!-- fuentes -->
+	<link href="https://fonts.googleapis.com/css?family=Open+sans" rel="stylesheet">
+	<!-- Icon fonts -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+	integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+	<!-- Favicon -->
+	<link rel="logo-definitivo" sizes="180x180" href="images/logodefinitivo.jpg">
+	<link rel="icon" type="image/jpg" sizes="32x32" href="images/logodefinitivo.jpg">
+	<link rel="icon" type="image/jpg" sizes="16x16" href="images/logodefinitivo.jpg">
+	<link rel="manifest" href="images/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+    <style>
+        html, body {
+            height: 100%;
+			background-color: #353536;
+			color: #fff;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Open Sans',sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1366px;
+            margin: 0 auto;
+        }
+
+		#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100%;
+}
+
+
+
+
+        header {
+            overflow: hidden;
+			background-color: rgb(23, 13, 167);
+    box-shadow: 0 24px 25px -22px rgb(0, 0, 0);
+	position:relative;
+
+        }
+
+        #logo {
+            float: left;
+        }
+
+        #infoContacto {
+            float: right;
+            margin-top: 22px;
+        }
+
+        #infoContacto i {
+            color: #ffffff;
+            margin-right: 12px;
+            font-size: 1.20rem;
+        }
+
+        article > section #intro {
+            background-image: linear-gradient(rgba(30, 235, 122, 0.83), rgba(34, 8, 180, 0.83)), url(images/motor.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center right;
+			position:relative;
+        }
+
+        #intro {
+            display: flex;
+            padding: 60px 0;
+            flex-wrap: row wrap;
+            height: 105%;
+            min-width: 600px;
+        }
+
+        #descripcion {
+            flex-basis: 60%;
+            padding: 0 1em;
+            flex-grow: 2;
+            color: #fff;
+			position: relative;
+        }
+
+        #formulario {
+            flex-basis: 30%;
+            background-color: #fff;
+            padding: 20px 1em;
+			position: relative;
+        }
+
+        h1 {
+            font-size: 2.68rem;
+            font-family: arial,tahoma,verdana,sans-serif;
+            margin-bottom: 25px;
+			position: relative;
+        }
+
+        #descripcion p {
+            margin-bottom: 33px;
+			position: relative;
+        }
+
+        #formulario h2 {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-size: 0.90rem;
+        }
+
+        input[type="text"], input[type="email"] {
+            display: inline-block;
+            width: 100%;
+            height: 45px;
+            padding: 0 1em;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            display: inline-block;
+            border: none;
+            background-color: #02008b;
+            color: #fff;
+            width: 100%;
+            padding: 10px 1em;
+            margin: 25px auto;
+            font-size: 1rem;
+        }
+
+        #descripcion  span {
+            font-size: 0.9rem;
+            border: 1px solid;
+            border-radius: 50%;
+            padding: 5px;
+            background-color: #fff;
+            color: #000;
+        }
+
+        #formulario {
+            flex-basis: 30%;
+            background-color: rgba(0, 0, 0,0.8);
+            padding: 20px 1em;
+            color: #fff;
+        }
+
+        section #seccionDos {
+            padding: 60px 0;
+            display: flex;
+            justify-content: right;
+			position: relative;
+
+        }
+
+		#seccionDos h2 {
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+      
+		#seccionDos p {
+			justify-content: left;
+			margin-bottom: 20px;
+		}
+
+
+        #seccionDos  {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        #seccionDos svg {
+            color: #1804c4;
+            font-size: 2.5rem;
+			border: 1px solid;
+			border-radius: 50%;
+			padding: 48px 0;
+			width: 140px;
+			height: 140px;
+			margin-bottom: 35px;
+
+
+        }
+
+		.col h3 {
+			font-size: 1.1rem;
+			font-weight: 500;
+			margin-bottom: 12px;
+		}
+
+		#Tres {
+			display: flex;
+			position: relative;
+
+		}
+
+		#Tres div {
+			flex-basis: 60%;
+			padding-right: 1.9em;
+			
+		}
+
+		#Tres video {
+			flex-shrink: 40%;
+			width: 40%;
+			align-self: flex-start;
+		
+		}
+
+		#Tres h2 {
+			margin-bottom: 20px;
+		}
+
+		#Tres a {
+			display: inline-block;
+			background-color: #1804c4;
+			color: #fff;
+			padding: 12px 10em;
+			text-decoration: none;
+			margin: 25px 0;
+		}
+
+		#seccionCuatro .card {
+			padding: 60px 0;
+			text-align: center;
+		}
+
+		#seccionCuatro {
+			display: flex;
+			justify-content: space-between;
+			margin: 50px auto;
+			position: relative;
+		}
+
+		.card img {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		.card {
+			margin: 20px 0.5em;
+			box-shadow: 2px 5px 15px #ccc9c9;
+			padding-bottom: 35px;
+		}
+
+		.card p {
+			font-size: 0.9rem;
+			padding: 12px 2em;
+		}
+
+		.card a {
+			font-size: 1.5rem;
+			color: #ffffff;
+			margin: 0 0.2em;
+		}
+
+		#seccionCinco {
+            background-image: linear-gradient(rgba(22, 11, 184, 0.83), rgba(46, 212, 13, 0.83)), url(images/batimovil.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center right;
+			position: relative;
+        }
+ 
+		#seccionCinco {
+			display: flex;
+			flex-flow: column wrap;
+			height: 100%;
+			min-height: 400px;
+			justify-content: center;
+			align-items: center;
+			color: #fff;
+		}
+
+		#seccionCinco h2 {
+			margin-bottom: 20px;
+		}
+
+		#seccionCinco p {
+			margin-bottom: 20px;
+		}
+
+		#seccionCinco a {
+			display: block;
+			background-color: #1804c4;
+			color: #fff;
+			text-decoration: none;
+			padding: 12px 2em;
+		}
+
+		footer {
+			padding: 20px 0;
+			position: relative;
+			color: #1804c4;
+		}
+
+		.copyright {
+			float:right ;
+		}
+
+		.nav {
+			float: left;
+		}
+
+		#piedePagina {
+
+			overflow: hidden;
+		}
+
+		.nav li {
+			display: inline-block;
+			font-size: 0.8rem;
+			padding: 12px 0 0;
+		}
+
+		.nav li a {
+			color: #c9c4c4;
+			text-decoration: none;
+			padding-right: 1.5em;
+		}
+
+        h2 {
+            font-size: 1.43rem;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+	
+    <video id="video-background" autoplay muted loop>
+        <source src="images/2023 Chevrolet Corvette Stingray - New Wild Project by Larte Design.mp4" type="video/mp4">
+    </video>
+
+
+
+
+    	<!-- Cabecera -->
+	<header>
+		<div class="container">
+		<div id="logo">
+			<a href="LLAVE.html"><img src="images/tesla.png" alt="logotipo" height="70" width="70"></a>
+		</div>
+			<div id="infoContacto">
+			<i><a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></i></a>
+			<i><a href="https://twitter.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></a></i>
+		</div>
+		</div> 
+	</header>
+
+	<main>
+		<article>
+			<section>
+				<div id="intro" class="container">
+					<div id="descripcion">
+						<h1>Curso de Mecanica automotriz</h1>
+						<p><span class="material-symbols-outlined">
+                            check
+                            </span>En este curso de mecánica automotriz aprenderás a comprender la estructura de un automóvil, 
+                        los diversos problemas que se pueden presentar y cómo se solucionan, analizando así las diversas herramientas que se utilizan. </p>
+						<p><span class="material-symbols-outlined">
+                            check
+                            </span>Es una disciplina en la cual el alumno aprenderá la teoría y la práctica de las diferentes necesidades del sector automotriz, 
+                            esta formación contempla el estudio en cuanto al diagnóstico, mantenimiento y reparación de los diferentes sistemas de los vehículos automotores.</p>
+						<p><span class="material-symbols-outlined">
+                            check
+                            </span>¿Apasionado por el mundo de los motores? ¡Este curso online es ideal para ti! Aprende los conocimientos fundamentales y las técnicas profesionales para reparar automóviles como un experto, ya sea que seas dueño de tu propio vehículo y quieras ahorrarte dinero en desperfectos,
+                             o que busques una nueva y rentable idea de negocio. ¡Empieza ahora!</p>
+					</div>
+					<div id="formulario">
+						<h2>solicitar informacion</h2>
+
+						<form action="datos.php" method="POST">
+							<label for="suNombre">Nombre:</label>
+							<input type="text" name="nombre" id="suNombre">
+							
+							<label for="suApellido">Apellido:</label>
+							<input type="text" name="Apellido" id="suApellido">
+							
+							<label for="suEmail">Email:</label>
+							<input type="text" name="Email" id="suEmail">
+
+							<input type="submit" value="enviar solicitud">
+							
+						</form>
+						<small>* Nunca compartimos tu informacion personal con terceros. Revisa nuestra<a href="#" target="_blank">politica de privacidad</a></small>
+				</div>
+			</section>
+			<section>
+				<div id="seccionDos" class="container">
+					
+					<div class="col">
+                          
+						 <h2>¿Qué aprenderás en el curso de mecánica automotriz?</h2>
+						<p>En este emocionante viaje de aprendizaje, te sumergirás en el mundo de la mecánica automotriz y
+					 adquirirás un conjunto de habilidades esenciales que te permitirán comprender y mantener tu vehículo como un profesional.
+					                                                  <br>
+				Desde los conceptos básicos de cómo funciona un motor hasta la resolución de problemas en situaciones del mundo real, este curso te proporcionará un conocimiento práctico que puedes aplicar de inmediato.</p>
+                        
+                        <a href="LLAVE.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M352 320c88.4 0 160-71.6 160-160c0-15.3-2.2-30.1-6.2-44.2c-3.1-10.8-16.4-13.2-24.3-5.3l-76.8 76.8c-3 3-7.1 4.7-11.3 4.7H336c-8.8 0-16-7.2-16-16V118.6c0-4.2 1.7-8.3 4.7-11.3l76.8-76.8c7.9-7.9 5.4-21.2-5.3-24.3C382.1 2.2 367.3 0 352 0C263.6 0 192 71.6 192 160c0 19.1 3.4 37.5 9.5 54.5L19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L297.5 310.5c17 6.2 35.4 9.5 54.5 9.5zM80 408a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg></a>
+                        <h3>!!MÁS INFORMACION!!</h3>
+					</div>
+					
+				</div>
+			</section>
+			<section>
+				<div id="Tres" class="container">
+					<div>
+						<h2>Que estudia un mecanico automotriz</h2>
+						<p>La ingeniería Mecánica Automotriz se enfoca en tres áreas: Mantenimiento, Desarrollo Tecnológico y Manufactura, donde se elaboran programas de mantenimiento, 
+                        supervisa recursos humanos, tecnológicos y materiales, diseña componentes o sistemas mecánicos, evalúa tecnologías de innovación en energías alternativas documentada características y 
+                    parámetros para la fabricación de componentes y desarrolla procesos de manufactura para la industria automotriz..</p>
+
+						<a href="#">Descargar temario</a>
+					</div>
+					<video controls>
+
+						<source src="images/MECATRÓNICA.mp4" type="video/mp4">
+						<source src="images/MECATRÓNICA.ogg" type="video/ogg">
+						<source src="images/MECATRÓNICA.webm" type="video/webm">
+						<p>su navegador no sopota este formato de video</p>
+					
+					</video>
+				</div>
+			</section>
+			<section>
+				<h2>conoce a nuestro staff de instructores</h2>
+
+				<div id="seccionCuatro" class="container">
+					<div class="card">
+						<img src="images/Captura.PNG" alt="imagen de una persona">
+						<h3>Elon Musk</h3>
+						<p>Presidente de Tesla</p>
+						<a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+						<a href="https://twitter.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></a>
+						<a href="https://mx.linkedin.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+					</div>
+					<div class="card">
+						<img src="images/checo.jpg" alt="imagen de una persona">
+						<h3>Checo Perez</h3>
+						<p>Piloto professional de Formula 1</p>
+						<a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+						<a href="https://twitter.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></a>
+						<a href="https://mx.linkedin.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+					</div>
+					<div class="card">
+						<img src="images/ford.jpg" alt="imagen de una persona">
+						<h3>Jim Farley</h3>
+						<p>Presidente de Ford</p>
+						<a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+						<a href="https://twitter.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></a>
+						<a href="https://mx.linkedin.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+					</div>
+					<div class="card">
+						<img src="images/lol.jpg" alt="imagen de una persona">
+						<h3>Martín Vaca.</h3>
+						<p>Mecanico</p>
+						<a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+						<a href="https://twitter.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></a>
+						<a href="https://mx.linkedin.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+					</div>
+
+				</div>
+			</section>
+			<section>
+				<div id="seccionCinco" class="container">
+					<h2>¿Deseas más informacion?</h2>
+					<p>Rellena nuestro formulario de solicitud de informacion y nos pondremos en contacto contigo</p>
+					<a href="#">¡Solicitar informacion ahora!</a> 
+				</div>
+			</section>
+		</article>
+	</main>
+	<footer>
+		<div id="piedePagina" class="container">
+			<ul class="nav">
+				<li><a href="#">home</a></li>
+				<li><a href="#">Acerca de</a></li>
+				<li><a href="#">Cursos</a></li>
+				<li><a href="#">politica de privacidad</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+
+			<div class="copyright">
+				<small>&copy Derechos Reservados.</small>
+			</div>
+
+		</div>
+	</footer>
+</body>
+</html>
